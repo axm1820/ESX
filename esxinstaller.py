@@ -230,7 +230,7 @@ def powercycle():
     f=open(macfile,'r')
     for line in f:
        host,macaddr=line.split(",")
-       powercmd="/opt/dell/srvadmin/bin/racadm5 -r %s  -u root -p calvin serveraction powercycle &"%(host)
+       powercmd="/opt/dell/srvadmin/bin/racadm5 -r %s  -u <hidden> -p <hidden> serveraction powercycle &"%(host)
        print powercmd 
        remotexecution(powercmd)
     f.close()  
