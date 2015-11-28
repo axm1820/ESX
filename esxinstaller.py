@@ -238,7 +238,6 @@ def powercycle():
 def remotexecution(cmd):
     print os.environ['SSH_ASKPASS']
     user="pxeuser"
-    password="ca\$hc0w"
     SERVER="suite.eng.vmware.com"
     SSH_OPTIONS="-oLogLevel=error  -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null "
     print "Executing command on the suite server %s" %(cmd)
