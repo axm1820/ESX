@@ -87,7 +87,7 @@ def mountiso(source,destination):
   print "Peforming loop mount from "+source+" on "+destination
   cmd="mount -o loop,ro %s %s " %(source,destination)
   p=subprocess.Popen(cmd,shell=True,stdin=subprocess.PIPE,stdout=subprocess.PIPE,)
-  out,err = p.communicate('through in to out') 
+  out,err = p.communicate('print err') 
   print out 
 
 def copycontent(source,destination):
