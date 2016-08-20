@@ -217,9 +217,9 @@ def cmdforsuite():
       host,macaddr=line.split(",")
       print host
       print macaddr 
-      cmd1="/home/pxeuser/PXEconfig.pl -l WDC -d mts/home5 -f skiran/pxe/pxelinux.cfg/default.gpxe -m %s"%(macaddr)
+      cmd1="/home/pxeuser/PXEconfig.pl -l WDC -d mts/home5 -f amishra/pxe/pxelinux.cfg/default.gpxe -m %s"%(macaddr)
       print cmd1
-      cmd2="/home/pxeuser/PXEconfig.pl -g -l WDC -d mts/home5 -f skiran/pxe/viewst-gpxe-m %s"%(macaddr)
+      cmd2="/home/pxeuser/PXEconfig.pl -g -l WDC -d mts/home5 -f amishra/pxe/viewst-gpxe-m %s"%(macaddr)
       print cmd2
       remotexecution(cmd1)
       remotexecution(cmd2)
